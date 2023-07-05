@@ -34,7 +34,7 @@ const lightenColor = (color) => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 h-full gap-4 p-4">
       {props.state.data.map((val, idx) => (
-        <a onClick={()=>Navigate(`/${val.name}`)}>
+        <button onClick={()=>Navigate(`/${val.name}`)}>
           <div
             className="rounded-lg shadow-lg p-4 flex justify-between"
             key={idx}
@@ -64,7 +64,7 @@ const lightenColor = (color) => {
               <img src={val.imageUrl} alt={val.name} className="w-32 h-32" />
             </div>
           </div>
-        </a>
+        </button>
       ))}
     </div>
   );

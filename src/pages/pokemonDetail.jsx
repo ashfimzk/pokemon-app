@@ -75,7 +75,7 @@ function Detail() {
             ? pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
             : null}
         </h1>
-        <img src={img} className="h-[300px] md:h-[400px]" />
+        <img src={img} alt='' className="h-[300px] md:h-[400px]" />
       </div>
 
       <div
